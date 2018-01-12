@@ -100,7 +100,7 @@ Follow the on screen directions from here on out.
 	`su - username`
 
 
-### install essentials
+### Install essentials
 
 ```
 sudo apt-get update
