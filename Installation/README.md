@@ -1,6 +1,6 @@
 # Software Installation
 
-## How to install varions Blockpool applications
+## How to install various Blockpool applications
 
 ### Blockpool Desktop Client
 - windows
