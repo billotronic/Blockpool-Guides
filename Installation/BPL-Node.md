@@ -100,14 +100,14 @@ Follow the on screen directions from here on out.
 	`su - username`
 
 
-***install essentials***
+### install essentials
 
 ```
 sudo apt-get update
 sudo apt-get install -y curl build-essential python git
 ```
 
-***Install Node.js (min version: 6.9.2)***
+### Install Node.js (min version: 6.9.2)
 
 ```
 sudo apt-get install -y nodejs
@@ -116,13 +116,13 @@ sudo npm install -g n
 sudo n 6.9.2
 ```
 
-***Install grunt-cli (globally)***
+### Install grunt-cli (globally)
 
 ```
 sudo npm install grunt-cli -g
 ```
 
-***Install PostgreSQL (min version: 9.5.2)***
+### Install PostgreSQL (min version: 9.5.2)
 
 ```
 sudo apt-get install -y postgresql postgresql-contrib
@@ -130,7 +130,7 @@ sudo -u postgres createuser -P --createdb $USER
 createdb ‘Database Name’  (this should match with the database name from config file)
 ```
 
-***Clone BPL Node repository***
+### Clone BPL Node repository
 
 ```
 git clone https://github.com/blockpool-io/BPL-node.git   (make sure you have git installed)
@@ -138,7 +138,7 @@ cd BPL-node
 git checkout bpl-mainnet
 ```
 
-***Install node modules***
+### Install node modules
 
 ```
 sudo apt-get install -y libpq-dev
@@ -147,7 +147,7 @@ npm install
 npm install forever -g
 ```
 
-***Add configurations for your node***
+### Add configurations for your node
 
 ```
 	Change the following in config.mainnet.json :
@@ -167,7 +167,7 @@ npm install forever -g
 ]
 ```
 
-**Launch BPL node**
+### Launch BPL node
 
 ```
 To launch BPL node on mainnet:
