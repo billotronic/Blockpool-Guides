@@ -30,10 +30,14 @@ sudo n 6.9.2
 ```
 
 - Clone the source code from GitHub
-```git clone https://github.com/blockpool-io/BPL-desktop```
+```
+git clone https://github.com/blockpool-io/BPL-desktop
+```
 
 - Enter the source code directory
-```cd BPL-desktop```
+```
+cd BPL-desktop
+```
 
 - Install dependencies and compile the client
 ```
