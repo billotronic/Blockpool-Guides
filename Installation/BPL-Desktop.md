@@ -22,8 +22,9 @@
 
 ### From Source
 In your distributions terminal do the following steps:
-- Install npm
+- Install Node & npm 
 ```
+sudo apt-get install nodejs
 sudo npm install -g n
 sudo n 6.9.2
 ```
