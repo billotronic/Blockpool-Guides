@@ -1,7 +1,7 @@
 # Setting up a Blockpool Delegate
 
 ## Requirements
-- A Blockpool wallet ([Guide](https://github.com/billotronic/Blockpool-Guides/blob/master/Installation/BPL-Desktop.md)). For the sake of this guide we are going to use the Blockpool-Desktop client
+- A Blockpool wallet ([Guide](../Installation/BPL-Desktop.md)). For the sake of this guide we are going to use the Blockpool-Desktop client
 
 - 11 BPL to register and vote for your delgate + BPL to stake. 
 
@@ -11,4 +11,4 @@ are 1 core and 4 GB RAM but see Node Considerations for further information on r
 
 - Linux. This has been tested with Ubuntu v16.0.4 and these instructions will be for that flavor of linux
 
-- BPL-node ([Guide](https://github.com/billotronic/Blockpool-Guides/blob/master/Installation/BPL-Node.md)) installed and synced with the network 
+- BPL-node ([Guide](../Installation/BPL-Node.md)) installed and synced with the network 
