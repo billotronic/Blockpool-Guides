@@ -1,6 +1,6 @@
 # Common Blockpool Tasks
 
-- create second passphrase
+- [Create Second Passphrase](./2ndpassphrase.md)
 
 - send and recieve bpl
 
