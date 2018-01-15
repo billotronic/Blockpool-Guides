@@ -110,6 +110,8 @@ Press Y to apply your config
 
 ![Screen](../Screens/i.node.goodstar.JPG)
 
+Press enter to return to the menu
+
 ## Method 2 step by step
 
 
