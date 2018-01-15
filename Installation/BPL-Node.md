@@ -91,7 +91,15 @@ sudo reboot
 Then relogin (As the user you created, not root)
 
 - Restart the commander with
+
+For wget download of BPLcommander:
 ```
+./BPLcommander.sh
+```
+
+For git download of BPLcommander:
+```
+cd BPL-Commander
 ./BPLcommander.sh
 ```
 
