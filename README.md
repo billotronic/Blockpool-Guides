@@ -1,9 +1,10 @@
 
 # Blockpool Guides & Info
 
-TODO:
+Community Maintained Guides and How-To's for Blockpool
 
-- fill out readme
-- make dirs
-- write guides
-- smack loco with a noodle
+## Contents
+
+[Usage](./Usage/README.md)
+
+[Installation](./Installation/README.md)
