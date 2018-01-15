@@ -109,7 +109,7 @@ Press Y to apply your config
 
 - If all goes right you will be greated your node successfuly starting
 
-![Screen](../Screens/i.node.goodstat.JPG)
+![Screen](../Screens/i.node.goodstart.JPG)
 
 Press enter to return to the menu
 
