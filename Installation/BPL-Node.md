@@ -50,9 +50,9 @@ An easy to use bash script for managing a Blockpool Node
 
 	`./BPLcommander.sh`
 
-Follow the on screen directions from here on out.
+5. Jump to (Using BPL-Commander)[/BPL-Node.md#using-bpl-commander]
 
-#### Via wget
+##### Via wget
 
 1. Get the script
 
@@ -69,8 +69,46 @@ Follow the on screen directions from here on out.
 	`./BPLcommander.sh`
 
 
-# ADD commander stuff
+#### Using BPL-Commander
 
+- BPL commander will ask for your sudo password. This is needed to update your package sources. If you are hosting on a service that uses a private key, no action will be needed.
+
+![Screen](../Screens/i.node.comsu.JPG)
+
+- Hit enter when prompted to begin the update process
+
+![Screen](../Screens/i.node.first.JPG)
+
+- When it's finished you will have to reboot for the changes to take affect. In the terminal enter
+
+![Screen](../Screens/i.node.reboot.JPG)
+
+```
+sudo reboot
+```
+
+Then relogin (As the user you created, not root)
+
+- Restard the commander with
+```
+./BPLcommander.sh
+```
+
+And you will be greeted with the main menu
+
+![Screen](../Screens/i.node.menu.JPG)
+
+- Select option #1 to install BPL node
+
+- After a successful install you will be prompted to input your passphrase
+
+![Screen](../Screens/i.node.pass.JPG)
+
+Press Y to apply your config
+
+- If all goes right you will be greated your node successfuly starting
+
+![Screen](../Screens/i.node.goodstar.JPG)
 
 ## Method 2 step by step
 
