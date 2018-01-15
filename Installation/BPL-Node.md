@@ -81,15 +81,16 @@ An easy to use bash script for managing a Blockpool Node
 
 - When it's finished you will have to reboot for the changes to take affect. In the terminal enter
 
-![Screen](../Screens/i.node.reboot.JPG)
-
 ```
 sudo reboot
 ```
 
+![Screen](../Screens/i.node.reboot.JPG)
+
+
 Then relogin (As the user you created, not root)
 
-- Restard the commander with
+- Restart the commander with
 ```
 ./BPLcommander.sh
 ```
@@ -108,7 +109,7 @@ Press Y to apply your config
 
 - If all goes right you will be greated your node successfuly starting
 
-![Screen](../Screens/i.node.goodstar.JPG)
+![Screen](../Screens/i.node.goodstat.JPG)
 
 Press enter to return to the menu
 
