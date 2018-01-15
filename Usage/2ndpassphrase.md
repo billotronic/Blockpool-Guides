@@ -2,7 +2,7 @@
 
 1. Open Blockpool-Desktop and open the account to be used for the delegate.
 
-![Screen](../Screens/u.del.wallet.JPG
+![Screen](../Screens/u.del.wallet.JPG)
 
 2. Click the menu icon (Three verticle dots) and select SECOND Passphrase
 
