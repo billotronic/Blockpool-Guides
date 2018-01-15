@@ -2,7 +2,7 @@
 
 ## Requirements
 - A Blockpool wallet ([Guide](../Installation/BPL-Desktop.md)). For the sake of this guide we are going to use the Blockpool-Desktop client. Take note of your passphrase as this will be needed for the node configuration.
-It is STRONGLY recommended to create a second passphrase ([Guide](./2ndpassphrase.md)) if you are running a node.
+*** It is STRONGLY recommended to create a second passphrase ([Guide](./2ndpassphrase.md)) if you are running a node. ***
 
 - 11 BPL to register and vote for your delgate + BPL to stake. 
 
