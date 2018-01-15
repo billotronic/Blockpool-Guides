@@ -6,6 +6,6 @@
 
 - voting
 
-- creating delegate
+- [Setting up a Delegate](./Delegate.md)
 
 - commander
