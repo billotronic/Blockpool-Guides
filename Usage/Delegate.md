@@ -57,4 +57,45 @@ Successful vote for your delegate
 
 ![Screen](../Screens/u.del.votesent.JPG)
 
+### 9. Confirm your delegate is forging
+
+In order for your delegate to forge, your node must be in sync with the network and can take multiple hours to fully sync.
+
+#### Via BPLcommander
+
+1. from the BPLcommander menu select ```S Node Status```
+
+![Screen](../Screens/i.node.menu.JPG)
+
+2. Enter your delegates Address and hit enter.
+
+![Screen](../Screens/u.del.stat.JPG)
+
+3. If your delegate is forging it will display ```Forging : true ``` in your stats right below your delegate name
+
+![Screen](../Screens/u.del.forging.JPG)
+
+#### Via block explorer
+
+1. Open a browser and navigate to [bplexp.blockpool.io/delegateMonitor](http://bplexp.blockpool.io/delegateMonitor)
+
+2. Locate your delegate by its name (CTRL+F to search)
+
+3. If your delegate is forging it will have a solid green ball for its status
+
+![Screen](../Screens/u.del.expl.JPG)
+
+#### Via node log
+
+1. Open your BPL-node log with nano. This is assuming you are in your home directory
+
+```nano ./BPL-node/logs/bpl.log```
+
+2. Open the search with ```Ctrl+W``` and enter ```forging node``` and hit enter. Note, depending on the log size and hardware this can take a few moments to complete the search.
+
+3. If your delegate is forging you will be rewarded with the following:
+
+![Screen](../Screens/u.del.log.JPG)
+
+
 
