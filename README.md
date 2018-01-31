@@ -8,3 +8,6 @@ Community Maintained Guides and How-To's for Blockpool
 [Usage](./Usage/README.md)
 
 [Installation](./Installation/README.md)
+
+[Troubleshooting](./Troubleshooting/README.md)
+
