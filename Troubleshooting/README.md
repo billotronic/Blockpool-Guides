@@ -10,15 +10,15 @@ BPL-node only supports the en_US.UTF-8 locale. To install this locale on a ubunt
 
 Use the DOWNARROW to navigate to en_US.UTF-8 UTF-8 and select it by pressing SPACEBAR. Press TAB to get to OK and hit ENTER
 
-[Screen](../Screens/t.locales.dpkg.JPG)
+![Screen](../Screens/t.locales.dpkg.JPG)
 
 Select en_US.UTF-8 as the system default and select OK
 
-[Screen](../Srceens/t.locales.dpkg2.JPG)
+![Screen](../Screens/t.locales.dpkg2.JPG)
 
 After which it will generate your new system locale
 
-[Screen](../Screens/t.locales.gen.JPG)
+![Screen](../Screens/t.locales.gen.JPG)
 
 Next update your system locales by entering this in the console:
 
