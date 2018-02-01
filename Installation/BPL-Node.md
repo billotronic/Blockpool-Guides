@@ -2,6 +2,8 @@
 
 An easy to use bash script for managing a Blockpool Node
 
+## WARNING: BPL-node requires en_US.UTF-8 to be the system default LOCALE. See [here](../Troubleshooting/LOCALE.md) for more information before starting the install.
+
 ## Method 1 via BPL-commander
 
 ### DO NOT RUN BPL COMMANDER AS ROOT 

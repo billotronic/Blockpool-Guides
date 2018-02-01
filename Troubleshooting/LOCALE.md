@@ -4,7 +4,7 @@ BPL-node only supports the en_US.UTF-8 locale. To see what your current system L
 
 ```locale```
 
-If you locale is already set to en_US it will look like this:
+If you locale is already set to en_US it will look similiar to this:
 
 ```
 $ locale
