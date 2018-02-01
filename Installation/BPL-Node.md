@@ -182,7 +182,7 @@ createdb ‘Database Name’  (this should match with the database name from con
 ### Clone BPL Node repository
 
 ```
-git clone https://github.com/blockpool-io/BPL-node.git   (make sure you have git installed)
+git clone https://github.com/blockpool-io/BPL-node.git   
 cd BPL-node
 git checkout bpl-mainnet
 ```
@@ -193,7 +193,7 @@ git checkout bpl-mainnet
 sudo apt-get install -y libpq-dev
 npm install libpq secp256k1
 npm install
-npm install forever -g
+sudo npm install forever -g
 ```
 
 ### Add configurations for your node
@@ -222,3 +222,10 @@ npm install forever -g
 To launch BPL node on mainnet:
 forever start app.js -c config.mainnet.json -g genesisBlock.mainnet.json
 ```
+To stop the node:
+
+```forever stop 0```
+
+To view the bpl log: (assuming location is BPL-node/)
+
+```tail -f logs/bpl.log```
