@@ -12,7 +12,7 @@ An easy to use bash script for managing a Blockpool Node
 
 1. Use the `adduser` command to add a new user to your system. Be sure to replace username with the user that you want to create.
 
-	`adduser username`
+	`sudo adduser username`
 
 
 2. Set and confirm the new user's password at the prompt. A strong password is highly recommended!
@@ -23,7 +23,7 @@ An easy to use bash script for managing a Blockpool Node
 
 4. Use the usermod command to add the user to the sudo group.
 
-	`usermod -aG sudo username`
+	`sudo usermod -aG sudo username`
 	
 	Again replacing username with the name used in step #1
 
