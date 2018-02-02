@@ -99,6 +99,6 @@ In order for your delegate to forge, your node must be in sync with the network 
 
 And this is what your log will say when you forge a block
 
-![Screen](..Screens/u.del.forge.JPG)
+![Screen](../Screens/u.del.forge.JPG)
 
 
