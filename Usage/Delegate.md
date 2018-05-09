@@ -23,7 +23,7 @@ are 1 core and 4 GB RAM but see Node Considerations for further information on r
 
 ### 2. Click the menu icon (Three verticle dots) and select REGISTER DELEGATE
 
-![Screen](../Screens/u.del.wallet.JPG)
+![Screen](../Screens/u.del.menu.JPG)
 
 ### 3. Enter the name you want the delegate to be known as (in the example billoguidetronic) and enter your passphrase for your account
 
