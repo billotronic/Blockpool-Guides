@@ -1,93 +1,111 @@
 # Setting up a Blockpool Delegate
 
-## Requirements
-- A Blockpool wallet ([Guide](../Installation/BPL-Desktop.md)). For the sake of this guide we are going to use the Blockpool-Desktop client. Take note of your passphrase as this will be needed for the node configuration.
-**_It is STRONGLY recommended to create a second passphrase ([Guide](./2ndpassphrase.md)) if you are running a node._**
+## Prerequisites
+- A Blockpool wallet ([Guide](../Installation/BPL-Desktop.md)). This guide uses the [BPL Desktop Wallet](https://github.com/blockpool-io/BPL-desktop/releases).
 
-- 11 BPL to register and vote for your delgate + BPL to stake. 
+- BPL-node ([Guide](../Installation/BPL-Node.md)) installed and synced with the network. This should go without saying, but your node should have adequate hardware and a reliable internet connection. (See [Node Considerations] for more detail.)
+  - Dedicated internet connection with your own PC, Virtual Private Server (VPS), or dedicated server.
+  - At least 4 GB RAM
 
-- Reliable Hardware and internet conncetion. This is crucial to not only maximize returns on your BPL that is forging, but also to secure the Blockpool network.
-There are two approaches to this. You can either host the node on your own PC or host on a Virtual Private Server (VPS) / dedicated server. Overall system minimal requirements
-are 1 core and 4 GB RAM but see Node Considerations for further information on requirements
+- 16 BPL to register your delegate (10 BPL), add a second passphrase (5 BPL), and vote for your delegate (1 BPL).
 
-- Linux. This has been tested with Ubuntu v16.0.4 and these instructions will be for that flavor of linux
+## Create an account
+If you haven't already, create an account in your BPL Wallet. Proper security practices are outside of the scope of this guide, but be sure to save your passphrase in a secure place. You will need it in general if you want to be able to spend your BPL, and you will also need it to add your delegate to your node. **_It is also STRONGLY recommended to create a second passphrase ([Guide](./2ndpassphrase.md)) if you are going to run a delegate. This will allow extra security because your main passphrase is stored on your delegate server._**
 
-- BPL-node ([Guide](../Installation/BPL-Node.md)) installed and synced with the network 
+## Configure Your Node
 
+**NOTE:** This step does not have to come first, but if it does not, you will have a non-100% productivity rating, and if you are anything like us **_YOU WILL NOT LIKE IT_**.
 
-## Getting started
+Assuming you already have a properly secured and synced node, the next thing you will need to do is add the configuration for your delegate. You will need to add the passphrase you created for your account in the previous step to the config.mainnet.json file in the forging.secret section as shown below:
 
-### 1. Open Blockpool-Desktop and open the account to be used for the delegate.
+```
+Change the following in config.mainnet.json :
+
+"forging": {
+  ...
+  
+  secret: [
+    <Add your passphrase here>
+  ]
+}
+```
+
+## Register your Delegate
+
+First, open Blockpool-Desktop and open the account to be used for the delegate.
 
 ![Screen](../Screens/u.del.wallet.JPG)
 
-### 2. Click the menu icon (Three verticle dots) and select REGISTER DELEGATE
+Then, click the menu icon (the three vertical dots) and select REGISTER DELEGATE.
 
 ![Screen](../Screens/u.del.menu.JPG)
 
-### 3. Enter the name you want the delegate to be known as (in the example billoguidetronic) and enter your passphrase for your account
+In the dialog box, enter the name of your delegate (it must be unique, in our example, we are using billoguidetronic) and then enter your passphrase for your account.
 
 ![Screen](../Screens/u.del.regdel.JPG)
 
-### 4. Confirm the registration. This creates a transaction on the blockchain to register your delegate (10 BPL)
+Confirm the registration. This will create a transaction on the blockchain to register your delegate (10 BPL).
 
 ![Screen](../Screens/u.del.confreg.JPG)
 
-### 5. Vote for your delegate. Open the vote tab in your account and click ADD DELEGATE
+You will now need to wait for the transaction to propagate through the network. It can take as long as 15-30 seconds. You can potentially speed up the process by hitting the refresh button. Alternatively, you may need to restart the wallet. Once you see that the delegate registration has been accepted, you can move on to the next step.
+
+## Vote for Your Delegate
+Open the vote tab in your account and click ADD DELEGATE
 
 ![Screen](../Screens/u.del.adddel.JPG)
 
-### 6. Since this is a new node, enter your delegate name in the second field provided (ours is billoguidetronic) and click add
+Since this is a new node, enter your delegate name in the second field provided (ours is billoguidetronic) and click ADD.
 
 ![Screen](../Screens/u.del.adddinfo.JPG)
 
-### 7. Once your delegate is loaded in the vote screen, click on Vote
+Once your delegate is loaded in the vote screen, click on Vote.
 
 ![Screen](../Screens/u.del.delloaded.JPG)
 
-### 8. Confirm the delegate name and enter your passphrase
+Confirm the delegate name and enter your passphrase.
 
 ![Screen](../Screens/u.del.voteinfo.JPG)
 
-Then confirm and send your vote transaction (1 BPL)
+Then, confirm and send your vote transaction (1 BPL).
 
 ![Screen](../Screens/u.del.voteconf.JPG)
 
-Successful vote for your delegate
+This is what it should look like aftera a successful vote for your delegate.
 
 ![Screen](../Screens/u.del.votesent.JPG)
 
-### 9. Confirm your delegate is forging
+## Confirm your delegate is forging
 
 In order for your delegate to forge, your node must be in sync with the network and can take multiple hours to fully sync.
 
-#### Via BPLcommander
+### Via BPLcommander
 
-1. from the BPLcommander menu select ```S Node Status```
+1. From the BPLcommander menu, select ```S Node Status```.
 
 ![Screen](../Screens/i.node.menu.JPG)
 
-2. Enter your delegates Address and hit enter.
+2. Enter your delegate's Address and hit enter.
 
 ![Screen](../Screens/u.del.stat.JPG)
 
-3. If your delegate is forging it will display ```Forging : true ``` in your stats right below your delegate name
+3. If your delegate is forging it will display ```Forging : true ``` in your stats right below your delegate name.
 
 ![Screen](../Screens/u.del.forging.JPG)
 
-#### Via block explorer
+### Via block explorer
 
-1. Open a browser and navigate to [bplexp.blockpool.io/delegateMonitor](http://bplexp.blockpool.io/delegateMonitor)
+1. Open a browser and navigate to [bplexp.blockpool.io/delegateMonitor](http://bplexp.blockpool.io/delegateMonitor).
 
-2. Locate your delegate by its name (CTRL+F to search)
+2. Locate your delegate by its name (CTRL+F to search).
 
-3. If your delegate is forging it will have a solid green ball for its status
+3. If your delegate is forging it will have a solid green ball for its status.
 
 ![Screen](../Screens/u.del.expl.JPG)
 
-#### Via node log
+### Via node log
 
-1. Open your BPL-node log with nano. This is assuming you are in your home directory
+1. Open your BPL-node log with nano. This is assuming you are in your home directory.
 
 ```nano ./BPL-node/logs/bpl.log```
 
@@ -97,8 +115,10 @@ In order for your delegate to forge, your node must be in sync with the network 
 
 ![Screen](../Screens/u.del.log.JPG)
 
-And this is what your log will say when you forge a block
+And this is what your log will say when you forge a block:
 
 ![Screen](../Screens/u.del.forge.JPG)
 
+## Profit
+Congratulations, you have successfully set up a BPL Delegate. Enjoy the reward you receive for securing the BPL network.
 
