@@ -2,10 +2,15 @@
 
 - [Create Second Passphrase](./2ndpassphrase.md)
 
-- send and recieve bpl
+- send and receive bpl
 
-- voting
+- voting and changing votes
 
 - [Setting up a Delegate](./Delegate.md)
 
+- Removing a Delegate
+
 - commander
+
+- [Running a node on the new testnet](./Stestnet.md)
+
