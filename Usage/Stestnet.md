@@ -100,7 +100,7 @@ sudo npm install forever -g
 
 ```
 To launch BPL node on testnet:
-forever start app.js -c config.testnet.json -g genesisBlock.mainnet.json
+forever start app.js -c config.testnet.json -g genesisBlock.testnet.json
 ```
 To stop the node:
 
