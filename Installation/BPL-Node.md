@@ -220,10 +220,17 @@ sudo npm install forever -g
 
 ### Launch BPL node
 
-```
+
 To launch BPL node on mainnet:
+```
 forever start app.js -c config.mainnet.json -g genesisBlock.mainnet.json
 ```
+
+To launch BPL node on testnet:
+```
+forever start app.js -c config.testnet.json -g genesisBlock.testnet.json
+```
+
 To stop the node:
 
 ```forever stop 0```
